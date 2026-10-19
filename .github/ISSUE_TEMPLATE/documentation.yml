@@ -1,0 +1,25 @@
+name: Documentation
+description: Report a documentation issue or suggest a documentation improvement.
+title: "[Docs]: "
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: Documentation location
+      description: Link to the page or identify the file or section.
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Issue or suggested improvement
+      description: Describe what is unclear, missing, incorrect, or out of date.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context or examples that may help.
+    validations:
+      required: false
