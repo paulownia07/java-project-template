@@ -1,0 +1,51 @@
+{
+    "name": "Java Project Template",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "vscode",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "postCreateCommand": "bash .devcontainer/post-create.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "yzhang.markdown-all-in-one",
+                "esbenp.prettier-vscode",
+                "DavidAnson.vscode-markdownlint",
+                "redhat.vscode-yaml",
+                "bierner.markdown-preview-github-styles",
+                "bierner.markdown-mermaid",
+                "mushan.vscode-paste-image",
+                "shd101wym.markdown-preview-enhanced"
+            ],
+            "settings": {
+                "[markdown]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode",
+                    "editor.formatOnSave": true,
+                    "editor.wordWrap": "on"
+                },
+                "[json]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode",
+                    "editor.formatOnSave": true
+                },
+                "[yaml]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode",
+                    "editor.formatOnSave": true
+                },
+                "github.copilot.chat.commitMessageGeneration.instructions": [
+                    {
+                        "file": ".github/instructions/commit.instructions.md"
+                    }
+                ],
+                "markdownlint.run": "onSave",
+                "json.validate.enable": true,
+                "yaml.validate": true,
+                "markdown.updateLinksOnFileMove.enabled": "always",
+                "markdown.preview.scrollPreviewWithEditor": true,
+                "markdown.preview.scrollEditorWithPreview": true,
+                "editor.formatOnSave": true
+            }
+        }
+    }
+}
