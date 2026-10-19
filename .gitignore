@@ -1,0 +1,50 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Compiled files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+*.nar
+!.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+*.code-workspace
+.apt_generated/
+.factorypath
+nbproject/
+.history/
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
